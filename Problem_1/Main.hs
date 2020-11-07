@@ -8,4 +8,4 @@ multiples :: [Int]
 multiples = [3, 5]
 
 main :: IO ()
-main = print $ sum $ runEval $ sequence $ map (rseq.naturalSum) multiples
+main = print.sum $ runEval $ sequence $ map (rseq.naturalSum) multiples
